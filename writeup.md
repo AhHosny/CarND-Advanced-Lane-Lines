@@ -1,5 +1,4 @@
 # Finding Lane Lines for Self Driving Cars
----
 
 
 ## The goals / steps of this project are the following:
@@ -120,6 +119,7 @@ In the next frame of video you don't need to do a blind search again, but instea
 ### Measuring Curvature
 
 I calculated the radius of curvature for the lane lines based on pixel values, so the radius I'm reporting is in pixel space, which is not the same as real world space. So I repeated this calculation after converting x and y values to real world space (meters). Then, I projected the measurements back down onto the road with the curvature radius and the vehicle offeset from centre of the lane printed into it.
+
 ![alt text][image15]
 ![alt text][image16]
 ![alt text][image17]
