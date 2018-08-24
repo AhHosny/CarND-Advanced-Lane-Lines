@@ -15,7 +15,7 @@
 
 [//]: # (Image References)
 
-[image1]: ./output_images\camera_cal.png "camera_cal"
+[image1]: ./output_images\camera_cal.jpg "camera_cal"
 [image2]: ./output_images\undistorted_ex.png "undistorted_ex"
 [image3]: ./output_images\pres1.png "Prespective1"
 [image4]: ./output_images\pres2.png "Prespective2"
