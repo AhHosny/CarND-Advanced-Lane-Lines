@@ -131,7 +131,7 @@ I calculated the radius of curvature for the lane lines based on pixel values, s
 
 ![alt_text][image15]
 ![alt text][image16]
-![center-aligned-image](./output_images/final3.png){: .align-center}
+![alt text][image17]
 
 ---
 ### Pipeline (video)
