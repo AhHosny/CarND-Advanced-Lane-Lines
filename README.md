@@ -47,6 +47,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 ## Pipeline (single images)
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
+
 ![alt text][image2]
 
 ### Perspective Transform
@@ -84,49 +85,60 @@ I verified that my perspective transform was working as expected by drawing the 
 ### Color Selection
 
 I Pulled out the individual channels from each color space, and see if it better isolates the laneline pixels.
+
 ![alt text][image5]
 ![alt text][image6]
 
 Clearly some of these channels perform better than others. Let's just look at the good ones.
+
 ![alt text][image7]
 ![alt text][image8]
 
 ### Sobel
 
 I defined a function that applies Sobel x and y, then computes the magnitude of the gradient and applies a threshold
+
 ![alt text][image9]
 
 ### Canny
 
 I also tested canny edge detector
+
 ![alt text][image10]
 
 ### Binary Pipeline Function
 
 I defined a function that will process an image and return the binary image, and tested this function on all test images
+
 ![alt text][image11]
 
 ### Finding and Fitting Line Pixels
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+
 ![alt text][image12]
 
 Using the full algorithm from before and starting fresh on every frame may seem inefficient, as the lines don't necessarily move a lot from frame to frame.
 
 In the next frame of video you don't need to do a blind search again, but instead you can just search in a margin around the previous line position, like in the above image. The green shaded area shows where we searched for the lines this time. So, once you know where the lines are in one frame of video, you can do a highly targeted search for them in the next frame.
+
 ![alt text][image13]
 ![alt text][image14]
 
 ### Measuring Curvature
 
 I calculated the radius of curvature for the lane lines based on pixel values, so the radius I'm reporting is in pixel space, which is not the same as real world space. So I repeated this calculation after converting x and y values to real world space (meters). Then, I projected the measurements back down onto the road with the curvature radius and the vehicle offeset from centre of the lane printed into it.
+
 <p align="center">
     
 ![alt text][image15]
+    
+</p>
+
 ![alt text][image16]
 ![alt text][image17]
 
-</p>
+
 
 ---
 ### Pipeline (video)
