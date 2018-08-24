@@ -129,14 +129,9 @@ In the next frame of video you don't need to do a blind search again, but instea
 
 I calculated the radius of curvature for the lane lines based on pixel values, so the radius I'm reporting is in pixel space, which is not the same as real world space. So I repeated this calculation after converting x and y values to real world space (meters). Then, I projected the measurements back down onto the road with the curvature radius and the vehicle offeset from centre of the lane printed into it.
 
-<p align="center">
-![alt text][image15]
-</p>
-
+![center-aligned-image][image15]
 ![alt text][image16]
 ![alt text][image17]
-
-
 
 ---
 ### Pipeline (video)
