@@ -1,4 +1,5 @@
 # Finding Lane Lines for Self Driving Cars
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 
 ## The goals / steps of this project are the following:
@@ -127,7 +128,5 @@ I calculated the radius of curvature for the lane lines based on pixel values, s
 ---
 
 ### Pipeline (video)
-
-#### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
 Here's a [link to my video result](./project_video_output.mp4)
